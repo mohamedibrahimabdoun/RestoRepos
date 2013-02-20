@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical" >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="It's Fragment A" />
+   <EditText
+       android:id="@+id/a_input"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <Button
+       android:id="@+id/a_enter"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:text="Enter to Fragment B"/>
+</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:gravity="center|center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Layout" />
+
+    <EditText
+        android:id="@+id/a_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/a_enter"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="Enter to Fragment B" />
+
+     <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:layout_marginBottom="60dip"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false" /> 
+    
+<!--   
+<ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:layout_marginBottom="60dip"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false" />
+    
+ -->
+
+
+</LinearLayout>

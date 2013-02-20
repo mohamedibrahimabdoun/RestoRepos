@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="makejar" name="build">
+  <property location="src" name="src-dir"/>
+  <property location="bin" name="bin-dir"/>
+  <property location="lib" name="lib-dir"/>
+  <property location="deploy" name="deploy-dir"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${bin-dir}" />
+    <mkdir dir="${deploy-dir}" />
+  </target>
+
+  <target name="compile" depends="init">
+    <javac
+      srcdir="${src-dir}"
+      destdir="${bin-dir}"
+      debug="on"
+      classpath="${lib-dir}/ksoap2-j2se-full-2.1.2.jar:${lib-dir}/android.jar"
+    />
+  </target>
+  <target name="makejar" depends="compile">
+	<copy tofile="${deploy-dir}/ksoap2-android-full-2.1.2.jar" file="${lib-dir}/ksoap2-j2se-full-2.1.2.jar" />
+	<jar destfile="${deploy-dir}/ksoap2-android-full-2.1.2.jar" update="true" basedir="${bin-dir}" />
+  </target>
+
+</project>
